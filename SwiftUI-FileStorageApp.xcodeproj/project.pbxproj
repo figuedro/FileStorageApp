@@ -29,12 +29,30 @@
 		710A86152E1592E2009181E4 /* SwiftUI-FileStorageAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-FileStorageAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		710A86002E1592E0009181E4 /* SwiftUI-FileStorageApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SwiftUI-FileStorageApp";
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		710A86392E159302009181E4 /* Exceptions for "SwiftUI-FileStorageApp" folder in "SwiftUI-FileStorageApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				ContentView.swift,
+				SwiftUI_FileStorageAppApp.swift,
+				View/Buttons/NotificationButton.swift,
+				View/Buttons/SearchButton.swift,
+			);
+			target = 710A85FD2E1592E0009181E4 /* SwiftUI-FileStorageApp */;
 		};
+		710A863A2E159302009181E4 /* Exceptions for "SwiftUI-FileStorageApp" folder in "SwiftUI-FileStorageAppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				ContentView.swift,
+				SwiftUI_FileStorageAppApp.swift,
+			);
+			target = 710A86142E1592E2009181E4 /* SwiftUI-FileStorageAppUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		710A860E2E1592E2009181E4 /* SwiftUI-FileStorageAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "SwiftUI-FileStorageAppTests";
@@ -43,6 +61,15 @@
 		710A86182E1592E2009181E4 /* SwiftUI-FileStorageAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "SwiftUI-FileStorageAppUITests";
+			sourceTree = "<group>";
+		};
+		710A86352E159302009181E4 /* SwiftUI-FileStorageApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				710A86392E159302009181E4 /* Exceptions for "SwiftUI-FileStorageApp" folder in "SwiftUI-FileStorageApp" target */,
+				710A863A2E159302009181E4 /* Exceptions for "SwiftUI-FileStorageApp" folder in "SwiftUI-FileStorageAppUITests" target */,
+			);
+			path = "SwiftUI-FileStorageApp";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +102,7 @@
 		710A85F52E1592E0009181E4 = {
 			isa = PBXGroup;
 			children = (
-				710A86002E1592E0009181E4 /* SwiftUI-FileStorageApp */,
+				710A86352E159302009181E4 /* SwiftUI-FileStorageApp */,
 				710A860E2E1592E2009181E4 /* SwiftUI-FileStorageAppTests */,
 				710A86182E1592E2009181E4 /* SwiftUI-FileStorageAppUITests */,
 				710A85FF2E1592E0009181E4 /* Products */,
@@ -106,9 +133,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				710A86002E1592E0009181E4 /* SwiftUI-FileStorageApp */,
 			);
 			name = "SwiftUI-FileStorageApp";
 			packageProductDependencies = (
@@ -155,6 +179,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				710A86182E1592E2009181E4 /* SwiftUI-FileStorageAppUITests */,
+				710A86352E159302009181E4 /* SwiftUI-FileStorageApp */,
 			);
 			name = "SwiftUI-FileStorageAppUITests";
 			packageProductDependencies = (
